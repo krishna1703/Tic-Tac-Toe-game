@@ -1,0 +1,124 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+
+ nav {
+     background: linear-gradient(rgb(199, 148, 148), rgb(214, 214, 157));
+     color: rgb(81, 81, 244);
+     height: 55px;
+     font-size: 25px;
+     display: flex;
+     align-items: center;
+     padding: 0 15px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+
+ nav ul {
+     list-style-type: none;
+ }
+
+ .gamecontainer {
+     background :linear-gradient(rgb(210, 97, 97),rgb(252, 252, 61));
+     display: flex;
+     justify-content: center;
+     margin-top: 60px;
+ }
+
+ .container {
+     display: grid;
+     grid-template-columns: repeat(3, 10vw);
+     grid-template-rows: repeat(3, 10vw);
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     position: relative;
+      
+    }
+
+ .line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    transition: width 1s ease-in-out;
+ }
+ .box {
+     border: 2px solid rgb(18, 17, 17);
+     font-size: 5vw;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .gameinfo {
+    margin-left: 5;
+    margin-top: 20px;
+     padding: 0 34px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ .gameinfo h1{
+    font-size: 2rem;
+ }
+ .winsection{
+    margin-left: 30px;
+    margin-top: 20px;
+    size: 20px;
+ }
+ .info{
+    font-size: x-large;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .imgbox img{
+     width: 0;
+     transition: width 1s ease-out;
+ }
+ .br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset {
+    margin: 0 33px;
+    padding: 8px 18px;
+    background: rgb(222, 37, 37);
+    color :aqua;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: 400;
+}    
+
+#reset:hover{
+    background-color: blueviolet;
+
+}
+
+@media screen and (max-width:700px)
+ {
+    .gamecontainer{
+        flex-wrap: wrap;
+
+    }
+    .gameinfo{
+        margin-top: 40px;
+    }
+    .gameinfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: (3,20vw);
+        grid-template-columns: (3,20vw);
+    }
+}
